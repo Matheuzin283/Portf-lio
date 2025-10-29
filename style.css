@@ -1,0 +1,185 @@
+/* ======== ESTILO GERAL ======== */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.ui-page {
+  background: linear-gradient(135deg, #00c6ff, #ff4b2b);
+  color: white;
+  min-height: 100vh;
+}
+
+.content-center {
+  text-align: center;
+  color: #fff;
+}
+
+/* ======== CABEÇALHO ======== */
+.ui-header {
+  background: linear-gradient(90deg, #ff416c, #ff4b2b);
+  color: white;
+  border: none;
+  text-shadow: none;
+  font-weight: bold;
+}
+
+header h1 {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+/* ======== RODAPÉ ======== */
+.ui-footer {
+  background: linear-gradient(90deg, #00c6ff, #0072ff); /* Corrigido: removido '→' */
+  color: white;
+  border: none;
+  text-shadow: none;
+  text-align: center;
+}
+
+/* ======== FOTO DE PERFIL ======== */
+.profile-pic {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  margin: 20px auto;
+  display: block;
+  border: 4px solid #fff;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+  transition: transform 0.3s ease;
+}
+
+.profile-pic:hover {
+  transform: scale(1.05);
+}
+
+/* ======== NAVBAR ======== */
+.ui-navbar a {
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  color: white !important;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  border: none;
+  text-shadow: none;
+}
+
+.ui-navbar a.ui-btn-active {
+  background: linear-gradient(90deg, #ff416c, #ff4b2b) !important;
+  color: white !important;
+}
+
+.ui-navbar a:hover {
+  background: linear-gradient(90deg, #00b09b, #96c93d);
+  transform: scale(1.05);
+}
+
+/* ======== CONTEÚDO ======== */
+.ui-content h2 {
+  color: #fff;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+}
+
+.ui-content p {
+  color: #f0f0f0;
+  line-height: 1.6;
+  font-size: 16px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+/* ======== LISTA DE PROJETOS ======== */
+.ui-listview > li {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  margin-bottom: 10px;
+  background: white;
+  color: #333;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ui-listview > li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+}
+
+/* JQuery Mobile sobrescreve h2 e p dentro de listas, então precisamos ser mais específicos */
+.ui-listview > li a h2 {
+  color: #ff416c !important; /* Adicionado !important para garantir a sobreposição */
+  text-shadow: none !important;
+}
+
+.ui-listview > li a p {
+  color: #444 !important; /* Adicionado !important para garantir a sobreposição */
+  text-shadow: none !important;
+}
+
+/* ======== BOTÕES GERAIS ======== */
+.ui-btn {
+  border-radius: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  border: none;
+  text-shadow: none;
+  color: white !important;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+/* Botão padrão azul */
+.ui-btn:not(.ui-icon-back):not(.ui-btn-active):not(.ui-navbar a) {
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+}
+
+/* Botão ativo/selecionado - rosa */
+.ui-btn-active {
+  background: linear-gradient(90deg, #ff416c, #ff4b2b) !important;
+}
+
+/* Efeito hover verde */
+.ui-btn:hover {
+  background: linear-gradient(90deg, #00b09b, #96c93d);
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255,255,255,0.4);
+}
+
+/* Botão "Voltar" */
+.ui-icon-back {
+  background: linear-gradient(90deg, #ff416c, #ff4b2b) !important;
+  color: white !important;
+}
+
+.ui-icon-back:hover {
+  background: linear-gradient(90deg, #00b09b, #96c93d) !important;
+}
+
+/* ======== FORMULÁRIOS (Estilização de Contato) ======== */
+/* Este CSS estava no seu <style> mas não havia formulário no HTML. */
+/* Mantive aqui caso queira adicionar um formulário de contato no futuro. */
+form label {
+  color: #fff;
+  font-weight: bold;
+}
+
+form input, form textarea {
+  border-radius: 10px;
+  padding: 10px;
+  border: none;
+}
+
+form input[type="submit"] {
+  background: linear-gradient(90deg, #00b09b, #96c93d);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+  background: linear-gradient(90deg, #96c93d, #00b09b)} 
